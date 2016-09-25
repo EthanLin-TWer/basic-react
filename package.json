@@ -4,7 +4,8 @@
   "description": "Demo codebase while learning React and it's ecosystem.",
   "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack -w",
+    "build": "webpack -p"
   },
   "keywords": [
     "react",
@@ -20,6 +21,11 @@
   "author": "Linesh",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
     "html-webpack-plugin": "^2.22.0",
     "webpack": "^1.13.2"
   }

@@ -2,7 +2,7 @@
   "name": "stepbystep-react-basis-ecosystem",
   "version": "1.0.0",
   "description": "Demo codebase while learning React and it's ecosystem.",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,9 @@
     "babel"
   ],
   "author": "Linesh",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.2"
+  }
 }

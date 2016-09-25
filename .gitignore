@@ -1,0 +1,6 @@
+# Intellij(Yes, I don't have a webstorm, and my sublime/atoms is broken at the moment)
+.idea
+*.iml
+
+# NPM
+node_modules

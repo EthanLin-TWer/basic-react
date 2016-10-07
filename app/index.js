@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const HelloWorld = () => (
-   <div>Hello World</div>
+const HelloWorld = ({ name }) => (
+   <div>Hello {name ? name : 'World'}</div>
 )
 
-ReactDOM.render(<HelloWorld />, document.getElementById('app'))
+ReactDOM.render(<HelloWorld name="Linesh"/>, document.getElementById('app'))

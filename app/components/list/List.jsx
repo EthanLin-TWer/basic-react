@@ -1,5 +1,16 @@
 import React, { Component } from 'react'
 
+const ProfileImage = ({imageUrl}) => (
+   < img src={imageUrl} alt="" style={{height: 100, width: 100}}/>
+)
+const ProfileLink = ({username}) => (
+   <div>
+      <a href={`https://github.com/${username}`}>{username}</a>
+   </div>
+)
+
+const ProfileName = ({name}) => ( <div>{name}</div> )
+
 class List extends Component {
    constructor(props) {
       super(props)
@@ -7,7 +18,11 @@ class List extends Component {
 
    render() {
       const friends = this.props.friends.map(friend => (
-         <li>{friend}</li>
+         <li>
+            <ProfileImage imageUrl={friend.imageUrl} />
+            <ProfileLink username={friend.githubUsername} />
+            <ProfileName name={friend.name} />
+         </li>
       ))
       return (
          <div className="friends">

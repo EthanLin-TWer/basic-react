@@ -9,7 +9,7 @@ const ProfileLink = ({username}) => (
    </div>
 )
 
-const ProfileName = ({name}) => ( <div>{name}</div> )
+const ProfileName = ({children}) => ( <div>{children}</div> )
 
 class List extends Component {
    constructor(props) {
@@ -21,7 +21,7 @@ class List extends Component {
          <li>
             <ProfileImage imageUrl={friend.imageUrl} />
             <ProfileLink username={friend.githubUsername} />
-            <ProfileName name={friend.name} />
+            <ProfileName> {friend.name} </ProfileName>
          </li>
       ))
       return (

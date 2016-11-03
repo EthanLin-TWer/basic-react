@@ -1,8 +1,7 @@
 import React from 'react'
 
 export const Main = (props) => (
-   <div>
-      Hello from main.
+   <div className="main-container">
       {props.children}
    </div>
 )

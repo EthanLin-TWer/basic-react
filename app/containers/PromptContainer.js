@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 export class PromptContainer extends Component {
    render() {
       const { route } = this.props
-      console.log(this)
       return (
          <div className="jumbotron col-sm-6 col-sm-offset-3 text-center">
             <h1>{route.header}</h1>

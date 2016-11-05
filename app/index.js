@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Routes } from './config/router'
+import { Routes } from './config/routes'
 import Raven from 'raven-js'
 
 const sentry = {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import 'bootstrap'
 
 export class PromptContainer extends Component {
    render() {

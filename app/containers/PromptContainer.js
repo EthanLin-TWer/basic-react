@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import ReactRouter from 'react-router'
 
 export class PromptContainer extends Component {
    constructor(props) {
       super(props)
-      this.state = {
-         username: ''
-      }
+      this.state = { username: '' }
+
       this.onUpdateUser = this.onUpdateUser.bind(this)
       this.onSubmitUser = this.onSubmitUser.bind(this)
    }
@@ -19,18 +17,24 @@ export class PromptContainer extends Component {
       this.setState({
          username: event.target.value
       })
-      console.log(this.props)
-      console.log(PromptContainer.contextTypes)
    }
 
    onSubmitUser(event) {
       event.preventDefault()
-      const player = this.state.username;
+      const { router, routeParams } = this.props
+      const current = this.state.username;
+      this.setState({ username: '' })
 
-      if (this.props.routeParams.playerOne) {
-
+      if (!routeParams.playerOne) {
+         router.push(`/playerTwo/${current}`)
       } else {
-         this.props.router.push(`playerTwo/${player}`)
+         router.push({
+            pathname: '/battle',
+            query: {
+               playerOne: routeParams.playerOne,
+               playerTwo: this.state.username
+            }
+         })
       }
    }
 

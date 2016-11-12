@@ -1,25 +1,26 @@
 import React, { Component } from 'react'
+import { Prompt } from '../components/Prompt'
 
 export class PromptContainer extends Component {
    constructor(props) {
       super(props)
       this.state = { username: '' }
 
-      this.onUpdateUser = this.onUpdateUser.bind(this)
-      this.onSubmitUser = this.onSubmitUser.bind(this)
+      this.handleUpdateUser = this.handleUpdateUser.bind(this)
+      this.handleSubmitUser = this.handleSubmitUser.bind(this)
    }
 
    static contextTypes = {
       router: React.PropTypes.object.isRequired
    }
 
-   onUpdateUser(event) {
+   handleUpdateUser(event) {
       this.setState({
          username: event.target.value
       })
    }
 
-   onSubmitUser(event) {
+   handleSubmitUser(event) {
       event.preventDefault()
       const { router, routeParams } = this.props
       const current = this.state.username;
@@ -41,27 +42,10 @@ export class PromptContainer extends Component {
    render() {
       const { route } = this.props
       return (
-         <div className="jumbotron col-sm-6 col-sm-offset-3 text-center">
-            <h1>{route.header}</h1>
-            <div className="col-sm-12">
-               <form onSubmit={this.onSubmitUser}>
-                  <div className="form-group">
-                     <input type="text"
-                            className="form-control"
-                            placeholder="Github username"
-                            onChange={this.onUpdateUser}
-                            value={this.state.username}
-                     />
-                  </div>
-                  <div className="form-group col-sm-4 col-sm-offset-4">
-                     <button className="btn btn-block btn-success"
-                             type="submit">
-                        Continue
-                     </button>
-                  </div>
-               </form>
-            </div>
-         </div>
+         <Prompt username={this.state.username} header={route.header}
+                 onUpdateUser={this.handleUpdateUser}
+                 onSubmitUser={this.handleSubmitUser}
+         />
 
       )
    }

@@ -8,7 +8,9 @@ export const Home = ({children}) => (
          Some fancy motto
       </p>
       <Link to='/playerOne' >
-         Get Started
+         <button type="button" className="btn btn-lg btn-success">
+            Get started
+         </button>
       </Link>
    </div>
 )

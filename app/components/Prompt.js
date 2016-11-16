@@ -29,7 +29,7 @@ export class Prompt extends Component {
    }
 
    componentWillReceiveProps(nextProps, nextContext) {
-      console.log('component will receive props')
+
    }
 
    static propTypes = {

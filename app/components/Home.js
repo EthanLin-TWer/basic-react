@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from 'react'
+import { Link } from 'react-router'
 
 export const Home = ({ children }) => (
   <div className="jumbotron col-sm-12 text-center">
@@ -13,4 +13,4 @@ export const Home = ({ children }) => (
       </button>
     </Link>
   </div>
-);
+)

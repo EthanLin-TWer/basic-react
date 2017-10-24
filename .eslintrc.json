@@ -1,3 +1,14 @@
 {
-    "extends": "airbnb"
+  "extends": "airbnb",
+  "env": {
+    "jest": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "__DEV__": true
+  },
+  "rules": {
+    "indent": ["error", 2]
+  }
 }

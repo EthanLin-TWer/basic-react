@@ -17,6 +17,7 @@
   * [x] jest config 
 * [x] prop-types upgrade 
 * [x] Update to React 16
+* [x] upgrade webpack to 3.x
 * [x] CI - Travis
 * [x] ESLint & Prettier
 

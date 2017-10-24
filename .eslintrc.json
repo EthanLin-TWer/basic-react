@@ -1,5 +1,6 @@
 {
   "extends": "airbnb",
+  "parser": "babel-eslint",
   "env": {
     "jest": true,
     "node": true,
@@ -11,6 +12,8 @@
   },
   "rules": {
     "indent": ["error", 2],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}
+    ]
   }
 }

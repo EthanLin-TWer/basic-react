@@ -5,7 +5,11 @@ import autobind from 'autobind-decorator'
 
 import { Prompt } from '../components/Prompt'
 
-export class PromptContainer extends Component {
+export default class PromptContainer extends Component {
+  static contextTypes = {
+    router: PropTypes.object.isRequired,
+  }
+
   constructor(props) {
     super(props)
     this.state = { username: '' }
@@ -13,21 +17,17 @@ export class PromptContainer extends Component {
     this.handleSubmitUser = this.handleSubmitUser.bind(this)
   }
 
-  static contextTypes = {
-    router: PropTypes.object.isRequired
-  }
-
   @autobind
   handleUpdateUser(event) {
     this.setState({
-      username: event.target.value
+      username: event.target.value,
     })
   }
 
   handleSubmitUser(event) {
     event.preventDefault()
     const { router, routeParams } = this.props
-    const current = this.state.username;
+    const current = this.state.username
     this.setState({ username: '' })
 
     if (!routeParams.playerOne) {
@@ -37,8 +37,8 @@ export class PromptContainer extends Component {
         pathname: '/battle',
         query: {
           playerOne: routeParams.playerOne,
-          playerTwo: this.state.username
-        }
+          playerTwo: this.state.username,
+        },
       })
     }
   }
@@ -46,9 +46,11 @@ export class PromptContainer extends Component {
   render() {
     const { route } = this.props
     return (
-      <Prompt username={ this.state.username } header={ route.header }
-              onUpdateUser={ this.handleUpdateUser }
-              onSubmitUser={ this.handleSubmitUser }
+      <Prompt
+        username={this.state.username}
+        header={route.header}
+        onUpdateUser={this.handleUpdateUser}
+        onSubmitUser={this.handleSubmitUser}
       />
 
     )

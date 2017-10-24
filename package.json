@@ -1,5 +1,5 @@
 {
-  "name": "stepbystep-react-basis-ecosystem",
+  "name": "basic-react",
   "version": "1.0.0",
   "description": "Demo codebase while learning React and it's ecosystem.",
   "main": "app/index.js",
@@ -38,8 +38,8 @@
     "jquery": "^3.1.1",
     "react-router": "^3.0.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",

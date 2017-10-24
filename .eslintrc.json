@@ -13,8 +13,23 @@
   "rules": {
     "indent": ["error", 2],
     "semi": ["error", "never"],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": "always",
+      "ObjectPattern": "never"
+    }],
+    "object-curly-spacing": ["error", "always", {
+      "arraysInObjects": false,
+      "objectsInObjects": false
+    }],
     "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
-    "react/jsx-curly-spacing": ["error", "never"],
+    "react/jsx-curly-spacing": ["error", {
+      "when": "always",
+      "children": true,
+      "spacing": {
+        "allowMultiline": false,
+        "objectLiterals": "never"
+      }
+    }],
     "react/forbid-prop-types": ["error", { "forbid": ["any"] }]
   }
 }

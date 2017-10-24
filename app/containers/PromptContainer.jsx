@@ -18,7 +18,9 @@ export default class PromptContainer extends Component {
 
   constructor(props) {
     super(props)
-    this.state = { username: '' }
+    this.state = {
+      username: '',
+    }
 
     this.handleSubmitUser = this.handleSubmitUser.bind(this)
   }
@@ -34,7 +36,9 @@ export default class PromptContainer extends Component {
     event.preventDefault()
     const { router, routeParams } = this.props
     const current = this.state.username
-    this.setState({ username: '' })
+    this.setState({
+      username: '',
+    })
 
     if (!routeParams.playerOne) {
       router.push(`/playerTwo/${current}`)
@@ -53,12 +57,11 @@ export default class PromptContainer extends Component {
     const { route } = this.props
     return (
       <Prompt
-        username={this.state.username}
-        header={route.header}
-        onUpdateUser={this.handleUpdateUser}
-        onSubmitUser={this.handleSubmitUser}
+        username={ this.state.username }
+        header={ route.header }
+        onUpdateUser={ this.handleUpdateUser }
+        onSubmitUser={ this.handleSubmitUser }
       />
-
     )
   }
 }

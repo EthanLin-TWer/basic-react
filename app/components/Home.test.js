@@ -6,7 +6,9 @@ import assert from 'assert'
 
 import Home from './Home'
 
-Enzyme.configure({ adapter: new Adapter() })
+Enzyme.configure({
+  adapter: new Adapter(),
+})
 
 it('should run first test', () => {
   const component = shallow(<Home />)

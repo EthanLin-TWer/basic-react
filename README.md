@@ -2,18 +2,21 @@
 
 ## 技术债
 
-* [ ] reference to current project's eslint
 * [ ] fix bug on `BattleContainer` component 
 * [ ] update to router 4.x
-* [x] fix all eslint errors  
 * [x] introduce babel-eslint 
+* [x] fix all eslint errors  
+* [x] reference to current project's eslint
+  * [x] spaces before & after curly braces
+  * [x] spacing before jsx attributes & children
+  * [x] others 
 * [x] autobind decorator
 * [x] Testing - Enzyme, Jest & power-assert
   * [x] enzyme upgrade 
   * [x] work with power-assert
   * [x] jest config 
-* [x] Update to React 16
 * [x] prop-types upgrade 
+* [x] Update to React 16
 * [x] CI - Travis
 * [x] ESLint & Prettier
 

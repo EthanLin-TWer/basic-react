@@ -17,7 +17,7 @@ export default class BattleContainer extends Component {
   render() {
     const { route } = this.props
     return (
-      <Battle header={route.header} />
+      <Battle header={ route.header } />
     )
   }
 }

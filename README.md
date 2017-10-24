@@ -1,5 +1,13 @@
 # README [![][Badges: Travis CI]][Links: Travis CI]
 
+## Getting started 
+
+```bash
+npm install
+npm start 
+open http://localhost:8080
+```
+
 ## 技术债
 
 * [ ] fix bug on `BattleContainer` component 

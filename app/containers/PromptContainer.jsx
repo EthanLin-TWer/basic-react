@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { Prompt } from '../components/Prompt'
 
 export class PromptContainer extends Component {
@@ -11,7 +12,7 @@ export class PromptContainer extends Component {
   }
 
   static contextTypes = {
-    router: React.PropTypes.object.isRequired
+    router: PropTypes.object.isRequired
   }
 
   handleUpdateUser(event) {

@@ -5,7 +5,8 @@
 * [ ] prop-types upgrade 
 * [ ] Update to React 16
 * [ ] CI - Travis
-* [ ] ESLint & Prettier 
+* [x] ESLint & Prettier
+* [ ] reference to current project's eslint  
 * [ ] Testing - Enzyme, Jest & power-assert
 
 ---

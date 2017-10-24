@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
-import { Battle } from '../components/Battle'
+import PropTypes from 'prop-types'
 
-export class BattleContainer extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isLoading: true,
-      playerInfo: [],
-    }
+import Battle from '../components/Battle'
+
+export default class BattleContainer extends Component {
+  static propTypes = {
+    location: PropTypes.object.isRequired,
+    route: PropTypes.object.isRequired,
   }
 
   componentDidMount() {
-    const query = this.props.location.query
+    const { query } = this.props.location
     console.log(`query${query}`)
   }
 

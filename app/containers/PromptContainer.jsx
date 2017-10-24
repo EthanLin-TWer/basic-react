@@ -3,9 +3,15 @@ import PropTypes from 'prop-types'
 
 import autobind from 'autobind-decorator'
 
-import { Prompt } from '../components/Prompt'
+import Prompt from '../components/Prompt'
 
 export default class PromptContainer extends Component {
+  static propTypes = {
+    route: PropTypes.object.isRequired,
+    router: PropTypes.object.isRequired,
+    routeParams: PropTypes.object.isRequired,
+  }
+
   static contextTypes = {
     router: PropTypes.object.isRequired,
   }

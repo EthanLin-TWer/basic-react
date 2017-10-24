@@ -1,11 +1,11 @@
 import React from 'react'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
-import { Main } from '../components/Main'
-import { Home } from '../components/Home'
+import Home from '../components/Home'
+import Main from '../components/Main'
 import PromptContainer from '../containers/PromptContainer'
-import { BattleContainer } from '../containers/BattleContainer'
+import BattleContainer from '../containers/BattleContainer'
 
-export const Routes = (
+export default (
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={Home} />

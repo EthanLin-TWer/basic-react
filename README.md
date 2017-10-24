@@ -2,10 +2,10 @@
 
 ## 技术债
 
-* [ ] prop-types upgrade 
 * [ ] Update to React 16
 * [ ] Testing - Enzyme, Jest & power-assert
 * [ ] reference to current project's eslint
+* [x] prop-types upgrade 
 * [x] CI - Travis
 * [x] ESLint & Prettier
 

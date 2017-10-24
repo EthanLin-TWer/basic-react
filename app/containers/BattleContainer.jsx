@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { Battle } from '../components/Battle'
 
 export class BattleContainer extends Component {

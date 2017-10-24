@@ -2,8 +2,12 @@
 
 ## 技术债
 
-* [ ] Testing - Enzyme, Jest & power-assert
 * [ ] reference to current project's eslint
+* [ ] autobind decorator
+* [x] Testing - Enzyme, Jest & power-assert
+  * [x] enzyme upgrade 
+  * [x] work with power-assert
+  * [x] jest config 
 * [x] Update to React 16
 * [x] prop-types upgrade 
 * [x] CI - Travis

@@ -3,7 +3,10 @@
 ## 技术债
 
 * [ ] reference to current project's eslint
-* [ ] autobind decorator
+* [ ] introduce babel-eslint 
+* [ ] fix bug on `BattleContainer` component 
+* [ ] update to router 4.x
+* [x] autobind decorator
 * [x] Testing - Enzyme, Jest & power-assert
   * [x] enzyme upgrade 
   * [x] work with power-assert

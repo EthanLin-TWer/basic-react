@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+
+import autobind from 'autobind-decorator'
+
 import { Prompt } from '../components/Prompt'
 
 export class PromptContainer extends Component {
@@ -7,7 +10,6 @@ export class PromptContainer extends Component {
     super(props)
     this.state = { username: '' }
 
-    this.handleUpdateUser = this.handleUpdateUser.bind(this)
     this.handleSubmitUser = this.handleSubmitUser.bind(this)
   }
 
@@ -15,6 +17,7 @@ export class PromptContainer extends Component {
     router: PropTypes.object.isRequired
   }
 
+  @autobind
   handleUpdateUser(event) {
     this.setState({
       username: event.target.value

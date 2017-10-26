@@ -10,8 +10,8 @@ open http://localhost:8080
 
 ## 技术债
 
-* [ ] fix bug on `BattleContainer` component 
 * [ ] update to router 4.x
+* [x] fix bug on `BattleContainer` component 
 * [x] introduce babel-eslint 
 * [x] fix all eslint errors  
 * [x] reference to current project's eslint

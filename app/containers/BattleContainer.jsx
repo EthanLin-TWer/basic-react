@@ -1,23 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-
 import Battle from '../components/Battle'
 
-export default class BattleContainer extends Component {
-  static propTypes = {
-    location: PropTypes.object.isRequired,
-    route: PropTypes.object.isRequired,
-  }
+const BattleContainer = ({ route }) => (
+  <Battle header={ route.header } />
+)
 
-  componentDidMount() {
-    const { query } = this.props.location
-    console.log(`query${query}`)
-  }
 
-  render() {
-    const { route } = this.props
-    return (
-      <Battle header={ route.header } />
-    )
-  }
+BattleContainer.propTypes = {
+  route: PropTypes.object.isRequired,
 }
+
+export default BattleContainer

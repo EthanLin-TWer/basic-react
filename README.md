@@ -11,13 +11,6 @@ open http://localhost:8080
 ## 技术债
 
 * [ ] update to router 4.x
-* [x] fix bug on `BattleContainer` component 
-* [x] introduce babel-eslint 
-* [x] fix all eslint errors  
-* [x] reference to current project's eslint
-  * [x] spaces before & after curly braces
-  * [x] spacing before jsx attributes & children
-  * [x] others 
 * [x] autobind decorator
 * [x] Testing - Enzyme, Jest & power-assert
   * [x] enzyme upgrade 
@@ -28,6 +21,11 @@ open http://localhost:8080
 * [x] upgrade webpack to 3.x
 * [x] CI - Travis
 * [x] ESLint & Prettier
+  * [x] introduce babel-eslint 
+  * [x] more complicated eslint rules 
+    * [x] spaces before & after curly braces
+    * [x] spacing before jsx attributes & children
+    * [x] others 
 
 ---
 

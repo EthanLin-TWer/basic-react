@@ -21,8 +21,6 @@ export default class PromptContainer extends Component {
     this.state = {
       username: '',
     }
-
-    this.handleSubmitUser = this.handleSubmitUser.bind(this)
   }
 
   @autobind
@@ -32,6 +30,7 @@ export default class PromptContainer extends Component {
     })
   }
 
+  @autobind
   handleSubmitUser(event) {
     event.preventDefault()
     const { router, routeParams } = this.props

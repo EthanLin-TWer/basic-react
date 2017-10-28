@@ -10,6 +10,7 @@ open http://localhost:8080
 
 ## 技术债
 
+* [ ] integration tests  
 * [ ] update to router 4.x
 * [x] autobind decorator
 * [x] Testing - Enzyme, Jest & power-assert

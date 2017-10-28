@@ -1,15 +1,39 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import autobind from 'autobind-decorator'
 
-const PopularLanguage = ({ language = ' chinese ' }) => (
-  <div>
-    { language }
-  </div>
-)
+export default class PopularLanguage extends React.Component {
+  state = {
+    selectedLanguage: 'All',
+  }
 
+  @autobind
+  updateLanguage(selectedLanguage) {
+    this.setState({
+      selectedLanguage,
+    })
+  }
+  render() {
+    const languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python']
 
-PopularLanguage.propTypes = {
-  language: PropTypes.string,
+    return (
+      <ul className="languages">
+        {
+          languages.map(language => (
+            <li
+              style={ language === this.state.selectedLanguage ? {
+                color: '#d0021b',
+              } : null }
+              onClick={ () => this.updateLanguage(language) }
+              key={ language }
+            >
+              { language }
+            </li>
+          ))
+        }
+      </ul>
+    )
+  }
 }
 
-export default PopularLanguage
+PopularLanguage.propTypes = {
+}

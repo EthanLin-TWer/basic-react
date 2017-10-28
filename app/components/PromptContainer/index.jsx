@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import autobind from 'autobind-decorator'
 
-import Prompt from '../Prompt'
+import Prompt from './Prompt'
 
 export default class PromptContainer extends Component {
   static propTypes = {

@@ -2,8 +2,8 @@ import React from 'react'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import Home from '../components/Home'
 import Main from '../components/Main'
-import PromptContainer from '../containers/PromptContainer'
-import BattleContainer from '../containers/BattleContainer'
+import PromptContainer from '../components/PromptContainer'
+import BattleContainer from '../components/BattleContainer'
 
 export default (
   <Router history={ hashHistory }>

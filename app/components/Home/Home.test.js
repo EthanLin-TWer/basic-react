@@ -4,7 +4,7 @@ import Adapter from 'enzyme-adapter-react-16'
 
 import assert from 'assert'
 
-import Home from './Home'
+import Home from '.'
 
 Enzyme.configure({
   adapter: new Adapter(),

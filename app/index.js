@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom'
 import Raven from 'raven-js'
 import 'bootstrap'
 
-import Routes from './config/routes'
+import Routes from './routes'
 
 const sentry = {
   app: '111723',

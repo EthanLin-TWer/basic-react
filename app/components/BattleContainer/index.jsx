@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Battle from '../components/Battle'
+import Battle from '../Battle'
 
 const BattleContainer = ({ route }) => (
   <Battle header={ route.header } />

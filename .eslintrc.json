@@ -30,8 +30,6 @@
         "objectLiterals": "never"
       }
     }],
-    "react/forbid-prop-types": ["error", { "forbid": ["any"] }],
-    "jsx-a11y/click-events-have-key-events": "off",
-    "jsx-a11y/no-noninteractive-element-interactions": "off"
+    "react/forbid-prop-types": ["error", { "forbid": ["any"] }]
   }
 }

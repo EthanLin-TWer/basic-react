@@ -19,7 +19,7 @@ export default class PopularLanguage extends React.Component {
       <ul className="languages">
         {
           languages.map(language => (
-            <li
+            <button
               style={ language === this.state.selectedLanguage ? {
                 color: '#d0021b',
               } : null }
@@ -27,7 +27,7 @@ export default class PopularLanguage extends React.Component {
               key={ language }
             >
               { language }
-            </li>
+            </button>
           ))
         }
       </ul>
